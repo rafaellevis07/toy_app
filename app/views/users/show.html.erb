@@ -1,9 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @user %>
-<% first_user = User.first %>
-<% micropost = first_user.microposts.first%>
-<%= micropost.content %>
 
 <div>
   <%= link_to "Edit this user", edit_user_path(@user) %> |
